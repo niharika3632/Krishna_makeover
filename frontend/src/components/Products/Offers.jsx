@@ -114,12 +114,12 @@ const offers = () => {
             setCanScrollLeft(leftScroll > 0)
             setCanScrollRight(leftScroll < rightScrollable - 5)
         }
-        console.log({
-            scrollLeft: container.scrollLeft,
-            clientWidth: container.clientWidth,
-            containerScrollWidth: container.scrollWidth,
-            offSetLeft: scrollRef.current.offSetLeft
-        })
+        // console.log({
+        //     scrollLeft: container.scrollLeft,
+        //     clientWidth: container.clientWidth,
+        //     containerScrollWidth: container.scrollWidth,
+        //     offSetLeft: scrollRef.current.offSetLeft
+        // })
     }
 
     useEffect(() => {

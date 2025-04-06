@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner'
+import ProductGrid from './ProductGrid'
 
 const selectedProduct = {
     name: "fruit facial",
@@ -18,6 +19,37 @@ const selectedProduct = {
     }
     ]
 }
+
+const similarProducts = [
+    {
+        _id: 1,
+        name: "Gold Facial",
+        price: 400,
+        images: [{ url: "https://picsum.photos/500/500?random=2" }]
+
+    },
+    {
+        _id: 2,
+        name: "Gold Facial",
+        price: 400,
+        images: [{ url: "https://picsum.photos/500/500?random=2" }]
+
+    },
+    {
+        _id: 3,
+        name: "Gold Facial",
+        price: 400,
+        images: [{ url: "https://picsum.photos/500/500?random=2" }]
+
+    },
+    {
+        _id: 4,
+        name: "Gold Facial",
+        price: 400,
+        images: [{ url: "https://picsum.photos/500/500?random=2" }]
+
+    }
+]
 
 const serviceDetails = () => {
 
@@ -156,9 +188,9 @@ const serviceDetails = () => {
                             onClick={handleAddToCart}
                             disabled={isButtonDisabled}
                             className={`bg-black text-white py-2 px-6 rouned w-full mb-4 ${isButtonDisabled ? "bg-gray-600 cursor-not-allowed" : " hover: bg-gray-900"}`}>
-                            {isButtonDisabled? "ADDING..." : "ADD TO CART"j}
+                            {isButtonDisabled ? "ADDING..." : "ADD TO CART"}
                         </button>
- 
+
                         <div className='mt-10 text-gray-700'>
                             <h3 className='text-xl font-bold mb-4'>Characterstics:</h3>
                             <table className='w-full text-left text-sm text-gray-500'>
@@ -174,6 +206,17 @@ const serviceDetails = () => {
                     </div>
                 </div>
 
+                {/* you may like */}
+                <div
+                    className='mt-20'
+                >
+                    <h2 className='text-2xl text-center font-medium mb-4'>
+                        You May Also Like
+                    </h2>
+                    <ProductGrid
+                        products={similarProducts}
+                    />
+                </div>
             </div>
         </div>
     )
