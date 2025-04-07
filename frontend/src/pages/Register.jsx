@@ -87,7 +87,7 @@ const Register = () => {
                     <button
                         type='submit'
                         className={`w-full bg-black text-white rounded-lg font-semibold hover:bg-gray-800 transition `}>
-                        Log In
+                        Sign Up
                     </button>
 
                     <p className={`mt-6 text-center text-sm`}>
