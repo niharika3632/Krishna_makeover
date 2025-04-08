@@ -12,9 +12,10 @@ const ProductGrid = ({ products }) => {
                     className={`block`}>
                     <div className={`bg-white p-4 rounded-lg`}>
                         <div className={`w-full h-70 mb-4`}>
+
                             <img src={product.images[0].url}
                                 alt={product.images[0].name || product.name} />
-                            
+
                         </div>
                         <h3 className={`text-sm mb-2`}>
                             {product.name}

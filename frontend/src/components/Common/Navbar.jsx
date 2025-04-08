@@ -33,7 +33,7 @@ const Navbar = () => {
                     <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>
                         BRIDAL
                     </Link>
-                    <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>
+                    <Link to="ServicesPage" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>
                         SERIVCES
                     </Link>
                     <Link to="#" className='text-gray-700 hover:text-black text-sm font-medium uppercase'>
